@@ -6,8 +6,8 @@ class Car
 private:
 	int V, VMax, carLength;
 public:
-	Car(int = 5, int = 10, int = 4);      //konstruktor z wartosciami domyslnymi	
-	void setSpeed();
+	Car(int, int, int);
+	int setSpeed(int);
 	void increaseSpeed();
 	void decreaseSpeed();
 };
