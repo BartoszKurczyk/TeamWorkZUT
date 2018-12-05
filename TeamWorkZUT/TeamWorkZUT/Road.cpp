@@ -8,19 +8,20 @@ using namespace std;
 
 void Road::addCar(Car * car)
 {
-	Car *car = new Car;
+	
 }
 
 bool Road::checkCar()
 {
-	if (car == NULL)
+	if (car != NULL)
 		return true;
+	else
+		return false;
 }
 
 int Road::getSpeed()
 {
-	return 0;
-	//return car->V
+	return car->getSpeed();
 }
 
 void Road::deleteCar()
@@ -31,7 +32,7 @@ void Road::deleteCar()
 
 void Road::replaceCar(Car * replacedCar)
 {
-	*car = replacedCar;
+	car = replacedCar;
 }
 
 Car * Road::getCar(Car *car)
@@ -41,7 +42,7 @@ Car * Road::getCar(Car *car)
 
 void Road::setSpeed(int speed)
 {
-	car->V = speed;
+	car->setSpeed(speed);
 }
 
 void Road::increaseSpeed()
@@ -52,5 +53,4 @@ void Road::increaseSpeed()
 void Road::decreaseSpeed()
 {
 	car->decreaseSpeed();
-
 }
