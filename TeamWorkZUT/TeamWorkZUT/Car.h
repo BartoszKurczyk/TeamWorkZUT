@@ -5,11 +5,16 @@ class Car
 {
 private:
 	int V, VMax, carLength;
+	
 public:
 	Car(int, int, int);
-	int setSpeed(int);
+	
+	void setSpeed(int);
 	void increaseSpeed();
 	void decreaseSpeed();
+	int getSpeed();
+protected:
+	int setSpeedInConstructor(int);
 };
 
 class passengerCar : public Car
